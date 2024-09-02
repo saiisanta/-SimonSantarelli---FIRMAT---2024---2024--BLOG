@@ -74,6 +74,25 @@ img{
     color: var(--c-brand-light);
 }
 
+@media (max-width:600px) {
+    .navbar-brand.title{
+        font-size: 4rem;
+    }
+    
+}
+@media (max-width:500px) {
+    .navbar-brand.title{
+        font-size: 3.5rem;
+    }
+    }
+
+@media (max-width:432px) {
+        .navbar-brand.title{
+            font-size: 1.9rem;
+    }
+    }
+        
+
 /*NAVBAR ITEMS*/
 
 .navbar-nav .nav-item{

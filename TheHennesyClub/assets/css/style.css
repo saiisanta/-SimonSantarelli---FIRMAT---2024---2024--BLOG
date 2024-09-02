@@ -18,6 +18,7 @@
 body{
     font-family: var(--font-base);
     line-height: 1.7;
+
 }
 
 h1,h2,h3,h4,h5,h6,
@@ -74,6 +75,24 @@ img{
     color: var(--c-brand-light);
 }
 
+@media (max-width:600px) {
+    .navbar-brand.title{
+        font-size: 4rem;
+    }
+    
+}
+@media (max-width:500px) {
+    .navbar-brand.title{
+        font-size: 3.5rem;
+    }
+    }
+
+@media (max-width:432px) {
+        .navbar-brand.title{
+            font-size: 1.9rem;
+    }
+    }
+    
 /*NAVBAR ITEMS*/
 
 .navbar-nav .nav-item{
@@ -169,4 +188,51 @@ img{
         filter: blur(0px);
         padding: 0px 0px;
     }
+  }
+
+.body{
+    background-color: #F2CC8F;
+  }
+
+  #about{
+    background-color: #F4F1DE;
+    box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  }
+
+  .section-padding .line{
+    width: 160px;
+    height: 4px;
+    margin: 16px auto 24px auto;
+    background-color: var(--c-brand-background);
+  }
+
+  .section-title{
+    margin-bottom: 10vh;
+    padding-bottom: 10vh;
+    color: var(--c-body);
+
+  }
+
+  .section-title p{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .iconbox{
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--c-brand-background);
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.196));
+    border-radius: 15px;
+    color: var(--c-brand-background-light);
+    font-size: 2rem;
+  }
+
+  .about-image{
+    border-radius: 20px;
   }
