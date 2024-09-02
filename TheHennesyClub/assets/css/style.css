@@ -1,0 +1,172 @@
+/*Fonts*/
+@import url(/assets/css/bonny.css);
+@import url();
+/*Variables*/
+:root{
+    --c-brand:#3f1b32;
+    --c-brand-light:#532241;
+    --c-brand-background:#d9ac53;
+    --c-brand-background-light:#ffe8ba;
+    --c-brand-background-light-smooth:#ffe8ba90;
+    --c-body:#575145;
+    --font-base:"Bonny",sans-serif;
+    --font-base-bold:"Bonny-Bold",bold;
+    --font-base-variable:"Bonny-Medium"
+}
+
+/*Helpers*/
+body{
+    font-family: var(--font-base);
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: var(--c-brand-light);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+/*NAVBAR*/
+
+.navbar{
+    background-color: var(--c-brand-background);
+    width: auto;
+}
+
+.navbar-nav{
+    font-family: Arial, bold;
+    font-size: large;
+    color: var(--c-body);
+    font-weight: 500;
+
+}
+.navbar-nav a{
+    color: var(--c-brand);
+    font-size: 1.6rem;
+}
+
+/*NAVBAR TITULO*/
+
+.navbar-brand.title{
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--c-brand);
+    padding-left: auto;
+}
+.navbar-brand.title:hover{
+    color: var(--c-brand-light);
+}
+
+/*NAVBAR ITEMS*/
+
+.navbar-nav .nav-item{
+    
+    margin-right: auto;
+    padding-right: 40px;
+    text-align: left;
+  }
+
+.navbar-nav .nav-item a:hover{
+    text-shadow: 1px 0px 5px var(--c-brand-background-light-smooth);
+}
+
+.nav-item-pointer{
+    height: 2px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(0.25turn, #d9ac53, #ffe8ba, #d9ac53);
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+.nav-link:hover + .nav-item-pointer {
+    display: none;
+  }
+
+/*NAVBAR BOTON*/
+
+.btn.btn-brand{
+    width: auto;
+    height: auto;
+    font-weight: 700;
+    font-size: 1.6rem;
+    border-radius: 16px;
+    align-content: center;
+    color: var(--c-brand-background-light);
+    background-color: var(--c-brand);
+    
+}
+
+
+.btn.btn-brand:hover{
+   background-color: #532241;
+   color: var(--c-brand-background-light);
+   
+}
+
+
+/*HERO*/
+
+.hero-title{
+    font-family:var(--font-base-variable);
+    color: var(--c-brand-background-light);
+    margin-bottom: 50vh;
+    text-shadow: 1px 0px 40px var(--c-brand-background-light-smooth);
+    animation-duration: 1500ms;
+    animation-name: slidein;
+}
+
+#hero{
+ background: linear-gradient(hsla(0, 0%, 0%, 0.453), hsla(0, 0%, 100%, 0.059)), url(../images/principal.jpg);  
+ background-position: center;
+ background-size: cover;
+ margin-top: -5vh;
+ animation-duration: 1s;
+ animation-name: blur;
+}
+
+
+
+@keyframes slidein {
+    from {
+      margin-bottom: 100vh;
+      text-shadow: 1px 30px 40px var(--c-brand-background-light);
+    }
+
+  
+    to {
+      margin-bottom: 50vh;
+      text-shadow: 1px 0px 40px var(--c-brand-background-light-smooth);
+    }
+    
+  }
+
+  @keyframes blur {
+    from {
+        filter: blur(5px);
+        padding: 20px 20px;
+    }
+  
+    to { 
+        filter: blur(0px);
+        padding: 0px 0px;
+    }
+  }
