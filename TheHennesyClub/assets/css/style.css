@@ -191,7 +191,7 @@ img{
   }
 
 .body{
-    background-color: #F2CC8F;
+    background-color: var(--c-brand-background);
   }
 
   #about{
@@ -236,3 +236,23 @@ img{
   .about-image{
     border-radius: 20px;
   }
+
+  .iconbox{
+    position: flex;
+
+    margin-top: 0vh;
+  }
+.iconbox-info{
+  margin-bottom: 0vh;
+  color: var(--c-body);
+  padding-top: 6vh;
+}
+
+
+.iconbox-info p{
+  padding-bottom: 3vh;
+ }
+
+footer{
+  box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.090);
+}
