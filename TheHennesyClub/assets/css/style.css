@@ -62,87 +62,7 @@ img{
 .navbar-brand.title:hover{
     color: var(--c-brand-light);
 }
-
-@media (max-width:1450px) {
-  .iconbox-info p{
-    max-width: 450px;
-  }
-}
-
-@media (max-width:1400px) {
-  .iconbox-info p{
-    max-width: 400px;
-  }
-}
-
-@media (max-width:1300px) {
-  .iconbox-info p{
-    max-width: 300px;
-  }
-}
-
-@media (max-width:1024px) {
-  .iconbox-info p{
-    max-width: 280px;
-  }
-}
-
-@media (max-width:991px) {
-  .iconbox{
-    margin-left: 10vh;
-  }
-  .iconbox-info p{
-    max-width: 400px;
-  }
-}
-
-
-@media (max-width:700px) {
-  .iconbox-info p{
-    max-width: 200px;
-  }
-}
-
-@media (max-width:600px) {
-    .navbar-brand.title{
-        font-size: 4rem;
-    }
-    .iconbox-info p{
-      max-width: 150px;
-    }
-}
-@media (max-width:500px) {
-    .navbar-brand.title{
-        font-size: 3rem;
-    }
-    .iconbox-info p{
-      max-width: 250px;
-    }
-    }
-@media (max-width:470px) {
-        .navbar-brand.title{
-          font-size: 2.5rem;
-    }
-    .iconbox-info p{
-      max-width: 220px;
-    }
-    .iconbox{
-      margin-left: 3vh;
-    }
-    }
-@media (max-width:433px) {
-  .navbar-brand.title{
-        font-size: 2.5rem;
-  }
-  .iconbox-info p{
-    max-width: 180px;
-  }
-}
-@media (max-width:300px) {
-  .iconbox-info p{
-    max-width: 100px;
-  }
-}    
+  
 /*NAVBAR ITEMS*/
 .navbar-nav .nav-item{
     margin-right: auto;
@@ -197,30 +117,6 @@ img{
  animation-duration: 1s;
  animation-name: blur;
 }
-@keyframes slidein {
-    from {
-      margin-bottom: 100vh;
-      text-shadow: 1px 30px 40px var(--c-brand-background-light);
-    }
-    to {
-      margin-bottom: 50vh;
-      text-shadow: 1px 0px 40px var(--c-brand-background-light-smooth);
-    }
-    
-  }
-
-  @keyframes blur {
-    from {
-        filter: blur(5px);
-        padding: 20px 20px;
-    }
-  
-    to { 
-        filter: blur(0px);
-        padding: 0px 0px;
-    }
-  }
-
 .body{
     background-color: var(--c-brand-background);
   }
@@ -278,4 +174,165 @@ img{
  }
 footer{
   box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.090);
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width:1450px) {
+  .iconbox-info p{
+    max-width: 450px;
+  }
+}
+
+@media (max-width:1400px) {
+  .iconbox-info p{
+    max-width: 400px;
+  }
+  .iconos{
+    margin-bottom: -30px;
+  }
+}
+
+@media (max-width:1300px) {
+  .iconbox-info p{
+    max-width: 300px;
+  }
+  .navbar-nav .nav-item{
+    padding-right: 20px;
+  }
+  .iconos{
+    margin-bottom: -50px;
+  }
+}
+
+@media (max-width:1200px) {
+  .iconos{
+    margin-bottom: -90px;
+    margin-bottom: -100px;
+  }
+}
+
+@media (max-width:1040px) {
+  .iconbox-info p{
+    max-width: 280px;
+  }
+  .navbar-nav .nav-item{
+    padding-right: 10px;
+  }
+}
+
+@media (max-width:991px) {
+  .about-image{
+    margin-left: auto;
+  }
+  .iconos{
+    margin-bottom: -70px;
+  }
+  .iconbox{
+    margin-left: 10vh;
+  }
+  .iconbox-info p{
+    max-width: 400px;
+  }
+  .navbar-nav .nav-item{
+    margin-right: 20px;
+    padding-right: 0px;
+  }
+  .navbar-nav .nav-item a{
+    font-size: 1.3rem;
+  }
+  .btn.btn-brand{
+    margin-left: 0px;
+  }
+}
+@media (max-width:945px) {
+  .navbar-nav .nav-item{
+    margin-right: 10px;
+    padding-right: 0px;
+  }
+  .navbar-brand.title{
+    font-size: 3rem;
+  }
+  .navbar-nav .nav-item a{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:767px) {
+  .navbar-brand.title{
+    font-size: 3.5rem;
+    margin-left: auto;
+  }
+}
+
+
+@media (max-width:700px) {
+  .iconbox-info p{
+    max-width: 200px;
+  }
+}
+
+@media (max-width:600px) {
+    .navbar-brand.title{
+        font-size: 4rem;
+    }
+    .iconbox-info p{
+      max-width: 150px;
+    }
+}
+@media (max-width:500px) {
+    .navbar-brand.title{
+        font-size: 3rem;
+    }
+    .iconbox-info p{
+      max-width: 250px;
+    }
+    }
+@media (max-width:470px) {
+    .navbar-brand.title{
+     font-size: 2.5rem;
+    }
+    .iconbox-info p{
+      max-width: 220px;
+    }
+    .iconbox{
+      margin-left: 3vh;
+    }
+    }
+@media (max-width:433px) {
+  .navbar-brand.title{
+        font-size: 2.5rem;
+  }
+  .iconbox-info p{
+    max-width: 180px;
+  }
+}
+@media (max-width:300px) {
+  .iconbox-info p{
+    max-width: 100px;
+  }
+}  
+/*animaciones*/
+@keyframes slidein {
+  from {
+    margin-bottom: 100vh;
+    text-shadow: 1px 30px 40px var(--c-brand-background-light);
+  }
+  to {
+    margin-bottom: 50vh;
+    text-shadow: 1px 0px 40px var(--c-brand-background-light-smooth);
+  }
+  
+}
+
+@keyframes blur {
+  from {
+      filter: blur(5px);
+      padding: 20px 20px;
+  }
+
+  to { 
+      filter: blur(0px);
+      padding: 0px 0px;
+  }
 }
