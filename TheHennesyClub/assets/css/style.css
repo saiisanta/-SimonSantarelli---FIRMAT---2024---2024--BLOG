@@ -176,6 +176,17 @@ footer{
   box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.090);
 }
 
+#club{
+  background-color: #F4F1DE;
+  padding-bottom: 20vh;
+  
+}
+
+.map{
+  box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.090);
+  border-radius: 20px;
+}
+
 /*MEDIA QUERIES*/
 
 @media (max-width:1450px) {
