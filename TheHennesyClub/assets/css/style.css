@@ -324,17 +324,7 @@ footer{
   }
 }  
 /*animaciones*/
-@keyframes slidein {
-  from {
-    margin-bottom: 100vh;
-    text-shadow: 1px 30px 40px var(--c-brand-background-light);
-  }
-  to {
-    margin-bottom: 50vh;
-    text-shadow: 1px 0px 40px var(--c-brand-background-light-smooth);
-  }
-  
-}
+
 
 @keyframes blur {
   from {

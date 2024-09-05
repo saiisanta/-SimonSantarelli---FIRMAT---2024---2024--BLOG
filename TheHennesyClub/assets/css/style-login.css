@@ -14,187 +14,29 @@
     --font-base-variable:"Bonny-Medium"
 }
 
-/*Helpers*/
-body{
-    font-family: var(--font-base);
-    line-height: 1.7;
-}
-
-h1,h2,h3,h4,h5,h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-    font-weight: 600;
-}
-
-a{
-    text-decoration: none;
-}
-a:hover{
-    color: var(--c-brand-light);
-}
-
-img{
-    max-width: 100%;
-    height: auto;
-}
-
-.section-padding{
-    padding-top: 140px;
-    padding-bottom: 140px;
-}
-
-/*NAVBAR*/
-
-.navbar{
-    background-color: var(--c-brand-background);
-    width: auto;
-}
-
-.navbar-nav{
-    font-family: Arial, bold;
-    font-size: large;
-    color: var(--c-body);
-    font-weight: 500;
-
-}
-.navbar-nav a{
-    color: var(--c-brand);
-    font-size: 1.6rem;
-}
-
-/*NAVBAR TITULO*/
-
-.navbar-brand.title{
-    font-family: var(--font-base);
-    font-weight: 700;
-    font-size: 4rem;
-    color: var(--c-brand);
-    padding-left: auto;
-}
-.navbar-brand.title:hover{
-    color: var(--c-brand-light);
-}
-
-@media (max-width:600px) {
-    .navbar-brand.title{
-        font-size: 4rem;
-    }
-    
-}
-@media (max-width:500px) {
-    .navbar-brand.title{
-        font-size: 3.5rem;
-    }
-    }
-
-@media (max-width:432px) {
-        .navbar-brand.title{
-            font-size: 1.9rem;
-    }
-    }
-        
-
-/*NAVBAR ITEMS*/
-
-.navbar-nav .nav-item{
-    
-    margin-right: auto;
-    padding-right: 40px;
-    text-align: left;
-  }
-
-.navbar-nav .nav-item a:hover{
-    text-shadow: 1px 0px 5px var(--c-brand-background-light-smooth);
-}
-
-.nav-item-pointer{
-    height: 2px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background: linear-gradient(0.25turn, #d9ac53, #ffe8ba, #d9ac53);
-    border-radius: 5px 5px 5px 5px;
-
-}
-
-.nav-link:hover + .nav-item-pointer {
-    display: none;
-  }
-
-/*NAVBAR BOTON*/
-
-.btn.btn-brand{
-    width: auto;
-    height: auto;
-    font-weight: 700;
-    font-size: 1.6rem;
-    border-radius: 16px;
-    align-content: center;
-    color: var(--c-brand-background-light);
-    background-color: var(--c-brand);
-    
-}
-
-
-.btn.btn-brand:hover{
-   background-color: #532241;
-   color: var(--c-brand-background-light);
-   
-}
-
-
-/*HERO*/
-
-.hero-title{
-    font-family:var(--font-base-variable);
-    color: var(--c-brand-background-light);
-    margin-bottom: 50vh;
-    text-shadow: 1px 0px 40px var(--c-brand-background-light-smooth);
-}
-
-#hero{
- background: linear-gradient(hsla(0, 0%, 0%, 0.453), hsla(0, 0%, 100%, 0.059)), url(../images/principal.jpg);
- overflow-x: hidden;
- overflow-y: hidden;    
- background-position: center;
- background-size: cover;
- margin-left: -5px;
- margin-right: -5px;
- margin-top: -5vh;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
-}
-
-
-.container-log-in{
-    margin-top: -50vh;
-}
-
-
-body{
-    overflow-x: hidden;
-}
-
-.container-log-in{
+#modal{
     background-color: var(--c-brand-background);
     border-radius: 30px;
     border: var(--c-brand);
     border-color: var(--c-brand);
     border: 5px solid var(--c-brand-light);;
-    padding: 5vh;
+    padding: 3vh;
     width: 30%;
     max-width: 1200px;
-    min-width: 400px;
     animation-duration: 1s;
-    animation-name: slidein;
+    animation: slidein;
+    text-align: center;
+}
+
+#modal::backdrop{
+    background-color: rgb(0, 0, 0, 0.3);
 }
 
 
-
-
 #LOGINBTN{
+    margin-top: -3vh;
     background-color: #3f1b32;
+    align-items: center;
     border-radius: 15px;
     color: var(--c-brand-background-light);
 }
@@ -206,14 +48,71 @@ body{
     
  }
 
- @keyframes slidein {
+ .btn-cerrar{
+    background-color: #3f1b32;
+    width: 30px;    
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    color: var(--c-brand-background-light);
+ }
+
+ .btn-cerrar:hover{
+    background-color: var(--c-brand-light);
+    color: var(--c-brand-background-light);
+    
+ }
+
+ .btn-cerrar i{
+    text-align: center;
+    font-size: large;
+ }
+
+@keyframes slidein {
     from {
-        margin-bottom: 60vh;
+        margin-bottom: 90vh;
     }
   
     to {
-      margin-bottom: 0px;
+      margin-bottom: 50vh;
     }
   }
+
+
+@media (max-width:1500px) {
+    #modal{
+        width: 800px;
+    }
+}
+
+@media (max-width:1200px) {
+    #modal{
+        width: 600px;
+    }
+}
+
+@media (max-width:1000px) {
+    #modal{
+        width: 400px;
+    }
+}
+
+@media (max-width:800px) {
+    #modal{
+        width: 400px;
+    }
+}
+
+@media (max-width:400px) {
+    #modal{
+        width: 250px;
+    }
+}
+
+@media (max-width:350px) {
+    #modal{
+        width: 250px;
+    }
+}
 
 
