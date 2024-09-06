@@ -17,3 +17,12 @@ btnAbrirModal.addEventListener("click",()=>{
 btnCerrarModal.addEventListener("click",()=>{
     modal.close();
 })
+
+const navclickItems = document.querySelectorAll(".navClick");
+const navbarNav = document.querySelector("#navbarNav");
+
+navclickItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    navbarNav.classList.remove("show");
+  });
+});

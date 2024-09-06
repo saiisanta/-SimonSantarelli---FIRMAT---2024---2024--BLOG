@@ -337,3 +337,15 @@ footer{
       padding: 0px 0px;
   }
 }
+
+@media (max-width:767px) {
+  .navbar-nav .nav-item a{
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .btn.btn-brand{
+    display: block;
+    margin-left: 7vh;
+    margin-right: 7vh;
+  }
+}
